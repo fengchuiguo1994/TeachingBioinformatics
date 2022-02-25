@@ -10,7 +10,7 @@ pip install xpinyin
 ```
 
 ### 2. 给上课学生批量创建账号
-从老师那获取到学生名单（一般给的excel表格的形式），提取学号和姓名两列，学号在前，姓名在后，创建文件[user.list.txt](创建账号\user.list.txt)。账号的形式是 黄星宇->xyhuang，诸葛星宇->gxyzhu（名的首字母加姓的全拼），密码的形式是 xyhuang_123456 （账号名_学号后六位）
+从老师那获取到学生名单（一般给的excel表格的形式），提取学号和姓名两列，学号在前，姓名在后，创建文件[user.list.txt](创建账号/user.list.txt)。账号的形式是 黄星宇->xyhuang，诸葛星宇->gxyzhu（名的首字母加姓的全拼），密码的形式是 xyhuang_123456 （账号名_学号后六位）
 ```
 python generateuers.py user.list.txt user.passwd.list.txt
 bash createuser.sh user.passwd.list.txt
